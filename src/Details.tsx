@@ -29,7 +29,7 @@ class Details extends Component<{ params: TParams}> {
 
   async componentDidMount() {
     const res = await fetch(
-      `http://pets-v2.dev-apis.com/pets?id=${(this.props.params.id)!.toString()}`
+      `https://pets-v2.dev-apis.com/pets?id=${(this.props.params.id)!.toString()}`
     );
     const json = (await res.json()) as PetAPIResponse;
     // setting new state values
@@ -48,7 +48,7 @@ class Details extends Component<{ params: TParams}> {
     this.setState({ showModal: !this.state.showModal });
   };
   // following method is pointing to the external URL.
-  adopt = () => (window.location.href = "http://bit.ly/pet-adopt");
+  adopt = () => (window.location.href = "https://bit.ly/pet-adopt");
 
   render() {
     if (this.state.loading) {

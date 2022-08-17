@@ -11,7 +11,7 @@ export default class Carousel extends Component<IProps> {
   };
   // The defaultProps is a React component property that allows you to set default values for the props argument
   static defaultProps = {
-    images: ["http://pets-images.dev-apis.com/pets/none.jpg"],
+    images: ["https://pets-images.dev-apis.com/pets/none.jpg"],
     name: "animal",
   };
   // arrow function must be used otherwise this will be undefined.

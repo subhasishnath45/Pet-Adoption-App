@@ -44,7 +44,7 @@ This hook returns a reference to the dispatch function from the Redux store. You
   async function requestPets() {
     // response of the fetch request
     const response: Response = await fetch(
-      `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
+      `https://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
     );
     // takes a response and parsing the body text as JSON
     const json = (await response.json()) as PetAPIResponse;
